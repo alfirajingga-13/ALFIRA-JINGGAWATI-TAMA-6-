@@ -30,27 +30,24 @@ margin-bottom:10px;
 .header p{
 opacity:.9;
 }
-/* Style tambahan untuk area tombol kembali */
-.nav-container {
-margin-bottom: 25px;
-}
+
+/* Style Tambahan untuk Tombol Kembali */
 .btn-back {
-display: inline-flex;
-align-items: center;
-gap: 8px;
-padding: 10px 20px;
-background: #ffffff;
-color: #2952cc;
-text-decoration: none;
-border-radius: 10px;
-font-weight: 600;
-border: 2px solid #2952cc;
-transition: 0.3s;
+background:#6c757d;
+margin-bottom:20px;
+cursor:pointer;
+border:none;
+font-size:15px;
+font-weight:600;
+display:inline-flex;
+align-items:center;
+gap:8px;
 }
 .btn-back:hover {
-background: #2952cc;
-color: white;
+background:#5a6268;
+transform:translateY(-2px);
 }
+
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -102,16 +99,15 @@ color:#666;
 </style>
 </head>
 <body>
+
 <div class="header">
 <h1>Kas Kelompok dan Monitoring Evaluasi</h1>
 <p>Sistem Informasi POKLAHSAR</p>
 </div>
 
-<div class="nav-container">
-<a href="index.html" class="btn-back">
-<i class="fas fa-home"></i> Kembali ke Halaman Utama
-</a>
-</div>
+<button onclick="kembaliKeAsal()" class="btn btn-back">
+<i class="fas fa-arrow-left"></i> Kembali
+</button>
 
 <div class="cards">
 <div class="card">
@@ -174,7 +170,7 @@ class="btn">
 Buka Dashboard
 </a>
 </div>
-  <div class="card">
+<div class="card">
 <i class="fas fa-chart-line"></i>
 <h3>Dashboard Looker Studio Tingkat Kepuasan</h3>
 <p>
@@ -199,8 +195,28 @@ Download Excel
 </a>
 </div>
 </div>
+
 <div class="footer">
-©️ 2026 Sistem Informasi POKLAHSAR | Fakultas Perikanan dan Ilmu Kelautan
+© 2026 Sistem Informasi POKLAHSAR | Fakultas Perikanan dan Ilmu Kelautan
 </div>
+
+<script>
+function kembaliKeAsal() {
+    // 1. Deteksi URL asal halaman (Beda repository / beda file / beda web tetap terlacak)
+    if (document.referrer) {
+        window.location.href = document.referrer;
+    } 
+    // 2. Jika enkripsi browser memblokir referrer, gunakan cadangan history browser
+    else if (history.length > 1) {
+        history.back();
+    } 
+    // 3. Jika dibuka langsung di tab baru tanpa riwayat, coba tutup tab otomatis
+    else {
+        alert("Tidak ada halaman sebelumnya untuk kembali.");
+        window.close();
+    }
+}
+</script>
+
 </body>
 </html>
