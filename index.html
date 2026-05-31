@@ -1,4 +1,4 @@
-BUATKAN SAYA BUTTON UNTUK KEMBALI KEHALAMAN INDEX UTAMA INI KODENYA <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -29,6 +29,27 @@ margin-bottom:10px;
 }
 .header p{
 opacity:.9;
+}
+/* Style tambahan untuk area tombol kembali */
+.nav-container {
+margin-bottom: 25px;
+}
+.btn-back {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 10px 20px;
+background: #ffffff;
+color: #2952cc;
+text-decoration: none;
+border-radius: 10px;
+font-weight: 600;
+border: 2px solid #2952cc;
+transition: 0.3s;
+}
+.btn-back:hover {
+background: #2952cc;
+color: white;
 }
 .cards{
 display:grid;
@@ -85,8 +106,14 @@ color:#666;
 <h1>Kas Kelompok dan Monitoring Evaluasi</h1>
 <p>Sistem Informasi POKLAHSAR</p>
 </div>
+
+<div class="nav-container">
+<a href="index.html" class="btn-back">
+<i class="fas fa-home"></i> Kembali ke Halaman Utama
+</a>
+</div>
+
 <div class="cards">
-<!-- FORM KAS -->
 <div class="card">
 <i class="fas fa-file-circle-plus"></i>
 <h3>Google Form Formulir Pendaftaran</h3>
@@ -99,7 +126,6 @@ class="btn">
 Buka Form
 </a>
 </div>
-<!-- SPREADSHEET KAS -->
 <div class="card">
 <i class="fas fa-table"></i>
 <h3>Spreadsheet Formulir Pendaftaran</h3>
@@ -112,7 +138,6 @@ class="btn">
 Lihat Data
 </a>
 </div>
-<!-- FORM KEPUASAN -->
 <div class="card">
 <i class="fas fa-face-smile"></i>
 <h3>Google Form Tingkat Kepuasan</h3>
@@ -125,7 +150,6 @@ class="btn">
 Isi Kuesioner
 </a>
 </div>
-<!-- SPREADSHEET KEPUASAN -->
 <div class="card">
 <i class="fas fa-chart-bar"></i>
 <h3>Spreadsheet Tingkat Kepuasan</h3>
@@ -138,7 +162,6 @@ class="btn">
 Lihat Rekap
 </a>
 </div>
-<!-- LOOKER STUDIO -->
 <div class="card">
 <i class="fas fa-chart-line"></i>
 <h3>Dashboard Looker Studio Formulir Pendaftaran</h3>
@@ -163,7 +186,6 @@ class="btn">
 Buka Dashboard
 </a>
 </div>
-<!-- FILE ANALISIS -->
 <div class="card">
 <i class="fas fa-file-excel"></i>
 <h3>Hasil Analisis Excel</h3>
@@ -178,7 +200,7 @@ Download Excel
 </div>
 </div>
 <div class="footer">
-© 2026 Sistem Informasi POKLAHSAR | Fakultas Perikanan dan Ilmu Kelautan
+©️ 2026 Sistem Informasi POKLAHSAR | Fakultas Perikanan dan Ilmu Kelautan
 </div>
 </body>
 </html>
