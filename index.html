@@ -1,43 +1,21 @@
-<!DOCTYPE html>
+BUATKAN SAYA BUTTON UNTUK KEMBALI KEHALAMAN INDEX UTAMA INI KODENYA <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kas Kelompok POKLAHSAR</title>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Segoe UI',sans-serif;
 }
-
 body{
 background:#f4f7fc;
 padding:30px;
 }
-
-.back-button{
-display:inline-block;
-padding:12px 20px;
-background:#28a745;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-transition:0.3s;
-margin-bottom:20px;
-}
-
-.back-button:hover{
-background:#218838;
-transform:translateY(-2px);
-}
-
 .header{
 background:#2952cc;
 color:white;
@@ -46,21 +24,17 @@ border-radius:15px;
 margin-bottom:25px;
 text-align:center;
 }
-
 .header h1{
 margin-bottom:10px;
 }
-
 .header p{
 opacity:.9;
 }
-
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
-
 .card{
 background:white;
 padding:25px;
@@ -69,29 +43,24 @@ box-shadow:0 4px 15px rgba(0,0,0,.08);
 transition:0.3s;
 text-align:center;
 }
-
 .card:hover{
 transform:translateY(-5px);
 }
-
 .card i{
 font-size:45px;
 color:#2952cc;
 margin-bottom:15px;
 }
-
 .card h3{
 margin-bottom:10px;
 color:#333;
 }
-
 .card p{
 font-size:14px;
 color:#666;
 margin-bottom:20px;
 line-height:1.6;
 }
-
 .btn{
 display:inline-block;
 padding:12px 20px;
@@ -101,63 +70,48 @@ text-decoration:none;
 border-radius:10px;
 transition:0.3s;
 }
-
 .btn:hover{
 background:#1e3fa3;
 }
-
 .footer{
 text-align:center;
 margin-top:30px;
 color:#666;
 }
-
 </style>
 </head>
-
 <body>
-
-<a href="index.html" class="back-button">
-<i class="fas fa-arrow-left"></i> Kembali ke Halaman Utama
-</a>
-
 <div class="header">
 <h1>Kas Kelompok dan Monitoring Evaluasi</h1>
 <p>Sistem Informasi POKLAHSAR</p>
 </div>
-
 <div class="cards">
-
-<!-- FORM PENDAFTARAN -->
+<!-- FORM KAS -->
 <div class="card">
 <i class="fas fa-file-circle-plus"></i>
 <h3>Google Form Formulir Pendaftaran</h3>
 <p>
 Form pengisian data formulir pendaftaran oleh pengurus dan anggota.
 </p>
-
 <a href="https://forms.gle/Ztuh7iKaYak5EJ1y5"
 target="_blank"
 class="btn">
 Buka Form
 </a>
 </div>
-
-<!-- SPREADSHEET PENDAFTARAN -->
+<!-- SPREADSHEET KAS -->
 <div class="card">
 <i class="fas fa-table"></i>
 <h3>Spreadsheet Formulir Pendaftaran</h3>
 <p>
-Melihat seluruh data formulir pendaftaran yang telah masuk dari Google Form.
+Melihat seluruh data kas kelompok yang telah masuk dari Google Form.
 </p>
-
 <a href="https://docs.google.com/spreadsheets/d/1oDFEck285CwRozH0BDBkkNh0qBFiRoXuA8QUB0n1Vlo/edit?usp=sharing"
 target="_blank"
 class="btn">
 Lihat Data
 </a>
 </div>
-
 <!-- FORM KEPUASAN -->
 <div class="card">
 <i class="fas fa-face-smile"></i>
@@ -165,14 +119,12 @@ Lihat Data
 <p>
 Kuesioner tingkat kepuasan anggota terhadap layanan administrasi kelompok.
 </p>
-
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSelbcKS1tVFKcIImhoJAkZMp_sueU_3xVCQ6wx8DO2T7YmUsA/viewform?usp=header"
 target="_blank"
 class="btn">
 Isi Kuesioner
 </a>
 </div>
-
 <!-- SPREADSHEET KEPUASAN -->
 <div class="card">
 <i class="fas fa-chart-bar"></i>
@@ -180,64 +132,53 @@ Isi Kuesioner
 <p>
 Hasil rekapitulasi jawaban kuesioner tingkat kepuasan anggota.
 </p>
-
 <a href="https://docs.google.com/spreadsheets/d/1yQ1_s0AB8jwvK3aCQqExX15rgqhPrR68hmY-unSdl_o/edit?usp=sharing"
 target="_blank"
 class="btn">
 Lihat Rekap
 </a>
 </div>
-
-<!-- LOOKER STUDIO PENDAFTARAN -->
+<!-- LOOKER STUDIO -->
 <div class="card">
 <i class="fas fa-chart-line"></i>
 <h3>Dashboard Looker Studio Formulir Pendaftaran</h3>
 <p>
 Visualisasi data formulir pendaftaran dalam bentuk dashboard interaktif.
 </p>
-
 <a href="https://datastudio.google.com/s/mBYbVRXKaek"
 target="_blank"
 class="btn">
 Buka Dashboard
 </a>
 </div>
-
-<!-- LOOKER STUDIO KEPUASAN -->
-<div class="card">
+  <div class="card">
 <i class="fas fa-chart-line"></i>
 <h3>Dashboard Looker Studio Tingkat Kepuasan</h3>
 <p>
-Visualisasi data tingkat kepuasan dalam bentuk dashboard interaktif.
+Visualisasi data kas kelompok dan tingkat kepuasan dalam bentuk dashboard interaktif.
 </p>
-
 <a href="https://datastudio.google.com/embed/reporting/3deac225-1899-4f0c-8032-82af684796a6/page/page_12345"
 target="_blank"
 class="btn">
 Buka Dashboard
 </a>
 </div>
-
 <!-- FILE ANALISIS -->
 <div class="card">
 <i class="fas fa-file-excel"></i>
 <h3>Hasil Analisis Excel</h3>
 <p>
-File hasil analisis data formulir pendaftaran dan tingkat kepuasan anggota.
+File hasil analisis data kas kelompok dan tingkat kepuasan anggota.
 </p>
-
 <a href="https://docs.google.com/spreadsheets/d/1pXwnxGT4OVztw8V-LDsEmQKwQXxjIC-F/edit?usp=sharing&ouid=115592520576030021001&rtpof=true&sd=true"
-target="_blank"
+download
 class="btn">
 Download Excel
 </a>
 </div>
-
 </div>
-
 <div class="footer">
 © 2026 Sistem Informasi POKLAHSAR | Fakultas Perikanan dan Ilmu Kelautan
 </div>
-
 </body>
 </html>
